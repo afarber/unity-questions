@@ -1,9 +1,11 @@
-# This .gitignore file should be placed at the root of your Unity project directory
-#
-# Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
-#
-/[Ll]ibrary/
-/[Tt]emp/
+# 1. Enable External option in Unity - Preferences - Packages - Repository
+# 2. Open the Edit menu and pick Project Settings - Editor:
+#    - Switch Version Control Mode to Visible Meta Files.
+#    - Switch Asset Serialization Mode to Force Text.
+# 3. Save the scene and project from File menu.
+
+[Ll]ibrary/
+[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
