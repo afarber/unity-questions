@@ -1427,11 +1427,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88af12ac6a81e4b12988318ae0c4f7d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axes: 1
+  axes: 0
   sensitivityHor: 10
   sensitivityVert: 10
-  minimumVert: -45
-  maximumVert: 45
+  minimumVert: -30
+  maximumVert: 30
 --- !u!33 &2139498000
 MeshFilter:
   m_ObjectHideFlags: 0
