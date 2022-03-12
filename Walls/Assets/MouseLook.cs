@@ -18,6 +18,15 @@ public class MouseLook : MonoBehaviour
     public float maximumVert = 30f;
     private float verticalRot = 0;
 
+    private void Start()
+    {
+        Rigidbody body = GetComponent<Rigidbody>();
+        if (body != null)
+        {
+            body.freezeRotation = true;
+        }
+    }
+
     void Update()
     {
         if (axes == RotationAxes.MouseX)
