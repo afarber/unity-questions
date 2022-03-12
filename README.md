@@ -8,6 +8,6 @@ The files are public domain - unless there is a different note (by their respect
 Screenshots
 ==========
 
-[Walls](https://github.com/afarber/unity-questions/tree/master/Walls):
+[Walls](https://github.com/afarber/unity-questions/tree/master/Walls) from the book [Unity in Action](https://www.manning.com/books/unity-in-action):
 
 ![screenshot](https://raw.github.com/afarber/unity-questions/master/Walls/screenshot.png)

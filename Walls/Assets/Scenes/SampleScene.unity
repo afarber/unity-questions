@@ -1316,7 +1316,8 @@ GameObject:
   - component: {fileID: 2139497994}
   - component: {fileID: 2139497993}
   - component: {fileID: 2139497997}
-  - component: {fileID: 2139497998}
+  - component: {fileID: 2139497999}
+  - component: {fileID: 2139498000}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1414,7 +1415,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2139497998
+--- !u!114 &2139497999
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1423,7 +1424,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2139497992}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7514c2e8dbcc42c3ac193ed6bf4c9b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 88af12ac6a81e4b12988318ae0c4f7d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  axes: 1
+--- !u!33 &2139498000
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139497992}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
