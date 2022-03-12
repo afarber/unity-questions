@@ -1428,6 +1428,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   axes: 1
+  sensitivityHor: 10
+  sensitivityVert: 10
+  minimumVert: -45
+  maximumVert: 45
 --- !u!33 &2139498000
 MeshFilter:
   m_ObjectHideFlags: 0
