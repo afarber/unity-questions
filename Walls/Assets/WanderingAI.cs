@@ -6,9 +6,20 @@ public class WanderingAI : MonoBehaviour
 {
     public float speed = 3.0f;
     public float obstacleRange = 5.0f;
+    private bool isAlive;
+
+    void Start()
+    {
+        isAlive = true;
+    }
 
     void Update()
     {
+        if (!isAlive)
+        {
+            return;
+        }
+
         transform.Translate(0, 0, speed * Time.deltaTime); 
  
         Ray ray = new(transform.position, transform.forward);
@@ -21,5 +32,9 @@ public class WanderingAI : MonoBehaviour
             }
         }
     }
-}
 
+    public void SetAlive(bool alive)
+    {
+        isAlive = alive;
+    }
+}
