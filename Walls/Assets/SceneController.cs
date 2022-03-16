@@ -9,7 +9,6 @@ public class SceneController : MonoBehaviour
  
     void Update()
     {
-
         if (enemy == null)
         {
             enemy = Instantiate(enemyPrefab) as GameObject;
