@@ -8,6 +8,9 @@ public class WanderingAI : MonoBehaviour
     public float obstacleRange = 5.0f;
     private bool isAlive;
 
+    [SerializeField] GameObject fireballPrefab;
+    private GameObject fireball;
+
     void Start()
     {
         isAlive = true;
@@ -25,7 +28,18 @@ public class WanderingAI : MonoBehaviour
         Ray ray = new(transform.position, transform.forward);
         if (Physics.SphereCast(ray, 0.75f, out RaycastHit hit))
         {
-            if (hit.distance < obstacleRange)
+            GameObject hitObject = hit.transform.gameObject;
+            if (hitObject.GetComponent<PlayerCharacter>())
+            {
+                if (fireball == null)
+                {
+                    fireball = Instantiate(fireballPrefab) as GameObject;
+                    fireball.transform.position =
+                      transform.TransformPoint(Vector3.forward * 1.5f);
+                    fireball.transform.rotation = transform.rotation;
+                }
+            }
+            else if (hit.distance < obstacleRange)
             {
                 float angle = Random.Range(-110, 110);
                 transform.Rotate(0, angle, 0);
