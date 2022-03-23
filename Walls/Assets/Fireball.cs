@@ -18,6 +18,7 @@ public class Fireball : MonoBehaviour
         if (player != null)
         {
             Debug.Log("Player hit");
+            player.Hurt(damage);
         }
         Destroy(this.gameObject);
     }
